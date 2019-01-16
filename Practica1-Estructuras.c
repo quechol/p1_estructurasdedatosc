@@ -34,37 +34,44 @@ int main (){
 		registros[i].id = i+1;
 		i++;
 	}
-	*/
+	
 	
 	strcpy(arreglo[0].direccion, "14 SUR");
 	strcpy(arreglo[0].gen, "M");
 	arreglo[0].id = 101;
 	strcpy(arreglo[0].nombre, "Saul");
 	strcpy(arreglo[0].numero, "2221234567");
+	*/
 	
 	do{
 		printf("Bienvenido");
 		printf("\n 1.- Registrar Persona.");
 		printf("\n 2.- Listar Personas Registradas");
 		printf("\n 3.- Consultar Datos por ID.");
-		printf("\n selecciona una opcion");
+		printf("\n 4.- Cargar Personas desde Archivo.");
+		printf("\n 0.- Salir.");
+		printf("\n Opción: ");
 		scanf("%d",&op);
 		
 		switch (op){
 			case 1:
+			break;
 				
-				printf("%s",arreglo[0].nombre);
-				printf("\n");
-				break;
-			case 2:
+			case 2:	
+			break;
 				
-				break;
 			case 3:
+			break;
+			
+			case 4:
+			break;	
 				
-				break;
+			case 0:
+			break;	
+				
 			default:
-				printf("Opcion Erronea");
-				break;
+			printf("Opcion Erronea");
+			break;
 		}
 		
 		
@@ -76,18 +83,3 @@ int main (){
 		fclose(archivo);
 	}*/
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
