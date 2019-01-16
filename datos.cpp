@@ -44,9 +44,9 @@ int main (){
 	
 	do{
 		printf("Bienvenido");
-		printf("\n 1.- Cargar el archivo");
-		printf("\n 2.- Agregar un elemento");
-		printf("\n 3.- Cosultar los elementos");
+		printf("\n 1.- Registrar Persona.");
+		printf("\n 2.- Listar Personas Registradas");
+		printf("\n 3.- Consultar Datos por ID.");
 		printf("\n selecciona una opcion");
 		scanf("%d",&op);
 		
