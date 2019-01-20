@@ -42,23 +42,7 @@ int main (){
 		exit(1);
 	}
 	
-	for(i=0; !feof(f); i++){
-		vaciar(temp);
-		aux = '0';
-		for (j=0; aux != '-'; j++){
-			aux = fgetc(f);
-			if (aux != '-'){
-				temp[j]= aux;
-			}	
-		
-		}
-		copiar (temp,i);
-		
-		fgets (temp,4,f);
-		per[i].edad = atoi(temp); //convertir a enteros
-		
-		printf("Nombre: %s Edad: %i. \n ",per[i].nombre, per[i].edad);
-	}
+	
 	
 	//menu
 	printf ("\n------------------------\n");
@@ -77,6 +61,23 @@ int main (){
 			break;
 				
 			case 2:	
+			for(i=0; !feof(f); i++){
+				vaciar(temp);
+				aux = '0';
+				for (j=0; aux != '-'; j++){
+					aux = fgetc(f);
+					if (aux != '-'){
+						temp[j]= aux;
+					}	
+
+				}
+				copiar (temp,i);
+
+				fgets (temp,4,f);
+				per[i].edad = atoi(temp); //convertir a enteros
+
+				printf("Nombre: %s Edad: %i. \n ",per[i].nombre, per[i].edad);
+			}
 			break;
 				
 			case 3:
