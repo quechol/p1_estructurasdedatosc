@@ -21,24 +21,23 @@ int main (){
 	char temp[50];
 	int cont=0;
 	
-	FILE *f;
+	FILE *f; //Primera apertura del archivo
 	f = fopen("registros.txt","r+");
 	if (f == NULL){
 		printf("No se ha podido abrir el fichero \n");
-		f = fopen("registros.txt","w+");
-		printf("El archivo se a creado automaticamente");
+		f = fopen("registros.txt","w+"); 
+		printf("El archivo se a creado automaticamente"); 
 		//exit(1);
 	}
 	while (!feof(f)){
 		fgets(temp,50,f);
 		cont++;
 	}
-	
-	rewind (f);
+	rewind (f); //regresa apuntador de archivo
 	
 	per = (personas*)malloc(cont*sizeof(personas));
 	if (per == NULL){
-		printf("No se ha podido reservar ma memoria. \n");
+		printf("No se ha podido reservar la memoria. \n");
 		exit(1);
 	}
 	
