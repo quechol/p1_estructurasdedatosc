@@ -48,8 +48,8 @@ int main (){
 	printf ("\n------------------------\n");
 	do{
 		printf("Bienvenido");
-		printf("\n 1.- Registrar Persona.");
-		printf("\n 2.- Listar Personas Registradas");
+		printf("\n 1.- Listar Personas Registradas");
+		printf("\n 2.- Registrar Persona.");
 		printf("\n 3.- Consultar Datos por ID.");
 		printf("\n 4.- Cargar Personas desde Archivo.");
 		printf("\n 0.- Salir.");
@@ -57,10 +57,7 @@ int main (){
 		scanf("%d",&op);
 		
 		switch (op){
-			case 1:
-			break;
-				
-			case 2:	
+			case 1:	
 			for(i=0; !feof(f); i++){
 				vaciar(temp);
 				aux = '0';
@@ -79,7 +76,8 @@ int main (){
 				printf("Nombre: %s Edad: %i. \n ",per[i].nombre, per[i].edad);
 			}
 			break;
-				
+			case 2:
+			break;
 			case 3:
 			break;
 			
